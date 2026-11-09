@@ -360,3 +360,18 @@ a.kon-v:hover{color:var(--green-ink)}
 .ftr-legal p{max-width:80ch}
 .ftr-link{color:var(--ink);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px;transition:text-decoration-color .2s}
 .ftr-link:hover{text-decoration-color:var(--green)}
+.sub-hdr{border-bottom:1px solid var(--line);background:var(--paper)}
+.sub-hdr-in{display:flex;justify-content:space-between;align-items:center;height:64px}
+.legal{padding-block:clamp(64px,8vw,112px) var(--sec);max-width:880px;margin-inline:auto}
+.legal .lbl{margin-bottom:14px}
+.legal-lead{font-size:18px;max-width:56ch;margin:24px 0 clamp(40px,5vw,64px)}
+.legal-sec{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;padding:28px 0 32px;border-top:1px solid var(--line)}
+.legal-h{font-size:20px;font-weight:700;letter-spacing:-.01em;display:flex;gap:16px;align-items:baseline}
+.legal-n{font-size:12px;font-weight:600;color:var(--green-ink);letter-spacing:.04em}
+.legal-body{display:flex;flex-direction:column;gap:12px;padding-left:34px;max-width:68ch}
+.legal-body p{color:var(--mut);font-size:16px}
+.legal-body b{color:var(--ink);font-weight:500}
+.legal-body a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.legal-body a:hover{text-decoration-color:var(--green)}
+.legal-valid{padding-top:24px;border-top:1px solid var(--line)}
+@media (max-width:560px){.legal-body{padding-left:0}}
