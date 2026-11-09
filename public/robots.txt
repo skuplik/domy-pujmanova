@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shuplick.github.io/domy-pujmanova/sitemap.xml
