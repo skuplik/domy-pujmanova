@@ -12,6 +12,10 @@ export default function Footer() {
           <SlezanLogo className="sl-logo" />
         </a>
       </div>
+      <div className="wrap ftr-legal">
+        <p className="small mut">Provozovatel: DŮM MP PROSTĚJOV s.r.o., Marie Pujmanové 683, 798 11 Prostějov, IČ 248 33 797, zapsáno u Krajského soudu v Brně, oddíl C, vložka 75455</p>
+        <a className="small ftr-link" href="https://prostejov-bydleni.cz/wp-content/uploads/2023/01/Pokyn_jednatele_GDPR.pdf" target="_blank" rel="noopener">Ochrana osobních údajů (PDF)</a>
+      </div>
     </footer>
   );
 }

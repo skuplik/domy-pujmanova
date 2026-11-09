@@ -356,3 +356,7 @@ a.kon-v:hover{color:var(--green-ink)}
 .byty-note{padding-top:20px}
 
 .hdr:not(.is-float):not(.is-open) .hdr-wm,.hdr:not(.is-float):not(.is-open) .hdr-nav a,.hdr:not(.is-float):not(.is-open) .hdr-menu{color:#fff}
+.ftr-legal{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 32px;padding-block:20px 32px;border-top:1px solid var(--line)}
+.ftr-legal p{max-width:80ch}
+.ftr-link{color:var(--ink);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px;transition:text-decoration-color .2s}
+.ftr-link:hover{text-decoration-color:var(--green)}
