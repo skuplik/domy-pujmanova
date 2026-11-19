@@ -17,7 +17,6 @@ import Modal from "./components/Modal";
 
 export default function App() {
   const [open, setOpen] = useState("1kk");
-  const [plan, setPlan] = useState(null);
   const [video, setVideo] = useState(false);
   useEffect(() => initReveal(), []);
   useEffect(() => initSmooth(), []);
@@ -31,7 +30,7 @@ export default function App() {
       <main>
         <Hero onType={onType} />
         <Intro onVideo={() => setVideo(true)} />
-        <Byty open={open} setOpen={setOpen} onBook={onBook} onPlan={setPlan} />
+        <Byty open={open} setOpen={setOpen} onBook={onBook} />
         <Cards onBook={() => onBook()} />
         <Okoli />
         <Postup />
@@ -39,7 +38,6 @@ export default function App() {
         <Kontakt />
       </main>
       <Footer />
-      {plan && <Modal title={"Půdorys " + plan} onClose={() => setPlan(null)}><div className="plan-ph">[Půdorys {plan} od klienta]</div></Modal>}
       {video && <Modal title="Prohlídka domu" onClose={() => setVideo(false)}><video className="mvid" src="video/hero.mp4" controls autoPlay muted playsInline /></Modal>}
     </>
   );

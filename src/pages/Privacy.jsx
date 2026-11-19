@@ -9,7 +9,7 @@ const OPERATOR = "DŮM MP PROSTĚJOV s.r.o., Marie Pujmanové 683, 798 11 Prost�
 const SECTIONS = [
   ["Kdo vaše údaje zpracovává", [
     <>Správcem osobních údajů je {OPERATOR} (dále jen „my“).</>,
-    <>S dotazy k osobním údajům se na nás obracejte e-mailem na <a href="mailto:info@domypujmanova.cz">info@domypujmanova.cz</a> nebo telefonicky na <a href="tel:+420603262273">+420 603 262 273</a>. [Doplnit případného pověřence pro ochranu osobních údajů.]</>,
+    <>S dotazy k osobním údajům se na nás obracejte [doplnit e-mail] nebo telefonicky na <a href="tel:+420603262273">+420 603 262 273</a>. [Doplnit případného pověřence pro ochranu osobních údajů.]</>,
   ]],
   ["Jaké údaje zpracováváme", [
     <><b>Když se ozvete s poptávkou:</b> jméno a příjmení, telefon, e-mail a to, co nám sami napíšete nebo řeknete (například kolik vás bude a od kdy chcete bydlet).</>,

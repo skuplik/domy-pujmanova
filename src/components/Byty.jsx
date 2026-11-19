@@ -3,7 +3,7 @@ import WeaveSeam from "./WeaveSeam";
 import Gallery from "./Gallery";
 import { TYPES, PRICES_VALID } from "../data/content";
 
-function Spec({ t, open, onBook, onPlan }) {
+function Spec({ t, open, onBook }) {
   return (
     <div className="spec" id={"spec-" + t.id}>
       <Gallery photos={t.photos} name={t.name} play={open} />
@@ -16,14 +16,13 @@ function Spec({ t, open, onBook, onPlan }) {
         </dl>
         <div className="spec-act">
           <button className="btn btn-green" onClick={() => onBook(t.id)}>Domluvit prohlídku <Chev /></button>
-          <button className="btn btn-line" onClick={() => onPlan(t.name)}>Půdorys <Chev /></button>
         </div>
       </div>
     </div>
   );
 }
 
-export default function Byty({ open, setOpen, onBook, onPlan }) {
+export default function Byty({ open, setOpen, onBook }) {
   return (
     <section className="band band-seamed" id="byty" aria-labelledby="byty-lbl">
       <WeaveSeam side="top" />
@@ -43,7 +42,7 @@ export default function Byty({ open, setOpen, onBook, onPlan }) {
                   <Chev d={isOpen ? "d" : "r"} />
                 </button>
                 </h3>
-                <div className="acc" inert={isOpen ? undefined : ""}><div><div className="acc-in"><Spec t={t} open={isOpen} onBook={onBook} onPlan={onPlan} /></div></div></div>
+                <div className="acc" inert={isOpen ? undefined : ""}><div><div className="acc-in"><Spec t={t} open={isOpen} onBook={onBook} /></div></div></div>
               </li>
             );
           })}

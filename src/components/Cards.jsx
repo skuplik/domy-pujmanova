@@ -27,9 +27,8 @@ export default function Cards({ onBook }) {
         <article className="card card-art">
           <div className="card-in">
             <p className="lbl">Ke stažení</p>
-            <h2 className="card-h">Ceník a půdorysy bytů</h2>
-
-            <a className="btn btn-line btn-sm" href="cenik.pdf" target="_blank" rel="noopener">Stáhnout PDF <Chev /></a>
+            <h2 className="card-h">Ceník bytů</h2>
+            <a className="btn btn-line btn-sm" href="cenik.pdf" target="_blank" rel="noopener">Stáhnout ceník <Chev /></a>
           </div>
         </article>
       </div>
